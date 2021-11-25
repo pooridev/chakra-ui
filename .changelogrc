@@ -1,23 +1,67 @@
-## 17-11-2021
+## 25-11-2021
 
-**Props Docs** `v1.0.40`
+`@chakra-ui/react@1.7.3`
 
-- Fix issue where package doesn't include a `dist` folder and doesn't work when
-  installed from npm.
+- Update storybook url configuration for `@chakra-ui/react` to
+  [https://storybook.chakra-ui.com](https://storybook.chakra-ui.com)
 
-**Radio** `v1.4.2`
+**Layout** `v1.6.0`
 
-- Add cursor `pointer` to the radio container
+- Add support for style props `gap`, `columnGap` and `rowGap`. Those CSS
+  properties are valid in a grid or flex context. For further information see
+  https://developer.mozilla.org/en-US/docs/Web/CSS/gap.
 
-**Slider** `v1.5.2`
+**Styled System** `v1.15.0`
 
-- Fixed a bug where a thumb would not move in case of stacked thumbs
+- Add support for style props `gap`, `columnGap` and `rowGap`. Those CSS
+  properties are valid in a grid or flex context. For further information see
+  https://developer.mozilla.org/en-US/docs/Web/CSS/gap.
 
-**Color Mode** `v1.3.2`
+**Toast** `v1.5.0`
 
-- Fixed flaky color-mode test
-- Fixed issue where `DarkMode` and `LightMode` elements rerenders their children
-  even if the child is memoized.
+- The `toast` function now exposes a `containerStyle` property you can use to
+  override the default styles for the toast container.
 
-`<LightMode>` and `<DarkMode>` components are now memoized to prevent
-unnecessary rendering of their child components.
+```jsx live=false
+function Example() {
+  // Via instantiation
+  const toast = useToast({
+    position: "top",
+    title: "Container style is customizable",
+    containerStyle: {
+      maxWidth: "100%",
+    },
+  })
+
+  // Or via trigger
+  return (
+    <Button
+      onClick={() => {
+        toast({
+          containerStyle: {
+            maxWidth: '100%',
+          },
+        })
+      }}
+    >
+      Click me to show toast with custom container style.
+    </Button>
+  )
+}
+
+
+**Tooltip** `v1.4.2`
+
+- Prevent `onKeyDown` callback from de/registering on every call of `useTooltip`
+
+
+**Popover** `v1.11.0`
+
+- Add `PopoverAnchor` component which allows you to set the Popover reference
+point without acting as a trigger.
+
+
+**Icon** `v2.0.0`
+
+- Minor change: auto assign key when passing array of paths to createIcon
+```
