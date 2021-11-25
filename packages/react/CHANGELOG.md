@@ -1,5 +1,27 @@
 # Change Log
 
+## 1.7.3
+
+### Patch Changes
+
+- [#5133](https://github.com/chakra-ui/chakra-ui/pull/5133)
+  [`6efe10f21`](https://github.com/chakra-ui/chakra-ui/commit/6efe10f21077992acf0edd0a97f8d877bf97180c)
+  Thanks [@yoannfleurydev](https://github.com/yoannfleurydev)! - Update
+  storybook url configuration for `@chakra-ui/react` to
+  [https://storybook.chakra-ui.com](https://storybook.chakra-ui.com)
+- Updated dependencies
+  [[`26d2a547b`](https://github.com/chakra-ui/chakra-ui/commit/26d2a547bca20e197f352c7492e3cad197b513e6),
+  [`98b9fbecb`](https://github.com/chakra-ui/chakra-ui/commit/98b9fbecb20118553e92009b84a887ffdb35ba28),
+  [`c20aa919e`](https://github.com/chakra-ui/chakra-ui/commit/c20aa919e4fa4d89a2c9be603fa60f851576558b),
+  [`f4fd9441e`](https://github.com/chakra-ui/chakra-ui/commit/f4fd9441eae40d135dfe9ae911a9b4547b4647f5)]:
+  - @chakra-ui/layout@1.6.0
+  - @chakra-ui/toast@1.5.0
+  - @chakra-ui/tooltip@1.4.2
+  - @chakra-ui/popover@1.11.0
+  - @chakra-ui/system@1.8.3
+  - @chakra-ui/provider@1.7.3
+  - @chakra-ui/skeleton@1.2.3
+
 ## 1.7.2
 
 ### Patch Changes
